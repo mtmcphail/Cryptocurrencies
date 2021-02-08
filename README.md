@@ -26,7 +26,7 @@ The following was done to preprocess the data:
 6. Create a new DataFrame of cryptocurrency names ```CoinNames```, and use the index from the previous dataset as the index for this new DataFrame. DataFrame ```cc_names_df```   
  ![logo](./Resources/D1_cc_names_df.png)
 
-7. Remove the ```CoinName``` column from the DataFrame since it's not necessary for the clustering algorithm. Dataframe: ```crypto_df```
+7. Remove the ```CoinName``` column from the DataFrame since it's not necessary for the clustering algorithm. Dataframe: ```crypto_df```    
  ![logo](./Resources/D1_crypto_df.png)
 
 Finally, using the ```get_dummies()``` method for columns ```Algorithm``` and ```ProofType``` and the StandardScaler ```fit_transform()``` function to standardize the features.  The resulting DataFrame has 98 columns, which cannot be shown fully here, but here is an excerpt:
@@ -38,7 +38,7 @@ Finally, using the ```get_dummies()``` method for columns ```Algorithm``` and ``
 The next steps involve, applying PCA to reduce the dimensions to 3 principal components.
 
 The resulting DataFrame, ```pcs_df``` now includes columns ```PC 1```, ```PC 2```, and ```PC 3```, and uses the index of the ```crypto_df``` DataFrame as the index.  Please see below:  
-![logo](./Resources/D2_PCA.png)
+![logo](./Resources/D2_pca.png)
 
 
 ## Deliverable 3 
